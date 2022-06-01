@@ -1,4 +1,7 @@
 function searchPokemon(searchQuery) {
+  // Hide the initial prompt
+  $("#initial-search-prompt").addClass("hidden");
+
   //   https://pokeapi.co/api/v2/pokemon/${query}
   let req = $.ajax({
     url: `https://pokeapi.co/api/v2/pokemon/${searchQuery}`,
